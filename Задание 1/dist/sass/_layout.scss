@@ -1,0 +1,16 @@
+@media (min-width: 751px) {
+  body {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    padding-top: 25%;
+  }
+  form{
+    input{
+      padding-left: 15%;
+    }
+  }
+}
