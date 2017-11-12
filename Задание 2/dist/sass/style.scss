@@ -1,0 +1,260 @@
+@import "reset";
+@import "custom";
+@import "fonts";
+@import "default-class";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background: $headerTop;
+  padding-top: 55px;
+}
+
+.logo {
+  margin-left: 44px;
+  display: inline-block;
+}
+
+.searchForm {
+  display: inline-block;
+  margin-left: 77px;
+  height: 42px;
+  vertical-align: bottom;
+  div {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+  }
+  i {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    z-index: 1;
+    background: url("../img/grayArrow.png");
+    right: 8px;
+    bottom: 16px;
+  }
+  select {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $standartFontColor;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: $buttonsBg;
+    width: 115px;
+    padding-left: 13px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  input {
+    display: inline-block;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    &.search {
+      margin-left: -4px;
+      padding-left: 16px;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      width: 262px;
+      color: #90979e;
+    }
+    &.submit {
+      margin-left: -4px;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      width: 61px;
+      border-right: 1px solid white;
+      background-color: $buttonsBg;
+      background-image: url(../img/search.png);
+      background-repeat: no-repeat;
+      background-position: 19px 9px;
+    }
+  }
+}
+
+.supportBlock {
+  display: inline-block;
+  color: $standartFontColor;
+  margin-left: 101px;
+  width: 318px;
+  letter-spacing: 0.3px;
+  span {
+    font-size: 18px;
+    &.number {
+      font-weight: 500;
+      float: right;
+    }
+  }
+}
+
+.smallNav {
+  margin-top: 7px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    display: inline-block;
+  }
+  a:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+.account {
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #b7c0cb;
+  border-style: solid;
+  background-color: #edf1f6;
+  width: 263px;
+  height: 46px;
+  vertical-align: bottom;
+  margin-left: 33px;
+  color: $standartFontColor;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mainNav {
+  margin-top: 17px;
+  width: 100%;
+  background: $standartFontColor;
+  height: 60px;
+  ul {
+    display: inline-block;
+    color: $navColor;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 54px;
+    vertical-align: bottom;
+    li {
+      display: inline-block;
+      & + li {
+        border-left: 1px solid #2f5984;
+        margin-left: 11px;
+        padding-left: 12px;
+        line-height: 25px;
+      }
+    }
+  }
+
+}
+
+.convert {
+  display: inline-block;
+  margin: 22px 0 0 45px;
+  div {
+    display: inline-block;
+    position: relative;
+    & + div {
+      margin-left: 26px;
+    }
+  }
+  i {
+    position: absolute;
+    width: 9px;
+    height: 7px;
+    z-index: 1;
+    background: url("../img/blueArrow.png");
+    right: -12px;
+    bottom: 7px;
+  }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: $standartWhiteFont;
+    font-size: 18px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
+
+.cart {
+  border-radius: 4px;
+  background-color: $cartBg;
+  width: 265px;
+  height: 42px;
+  display: inline-block;
+  float: right;
+  margin: 10px 13px 0 0;
+  i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/cart.png") no-repeat;
+    margin: 9px 0 0 40px;
+  }
+  span {
+    color: $headerTop;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 13px;
+    vertical-align: super;
+  }
+}
+
+.benefits {
+  background: white;
+}
+
+.inside {
+  box-sizing: border-box;
+  margin: 0 14px 11px 15px;
+  border-bottom: 1px solid #b7c0cb;
+  padding: 11px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  display: inline-block;
+  margin-left: 26px;
+  span {
+    display: block;
+    color: #3d3e3f;
+    font-size: 18px;
+    font-weight: 400;
+    & + span {
+      font-size: 14px;
+    }
+  }
+}
+
+.advantage {
+  padding: 0 19px;
+  & + .advantage {
+    padding: 0 75px;
+    border-left: 1px solid #b7c0cb;
+  }
+}
+
+.protection {
+  margin-left: 14px;
+}
+
+footer {
+  height: 500px;
+  background: rgba(128, 128, 128, 0.45);
+}
+
+@import "layout";
